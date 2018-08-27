@@ -22,6 +22,10 @@ module Redd
       include Postable
       include Replyable
       include Reportable
+      
+      # @!attribute [r] permalink
+      #   @return [String] the **relative** url permalink
+      property :permalink      
 
       # @!attribute [r] subreddit_id
       #   @return [String] the subreddit fullname
